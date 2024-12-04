@@ -1,0 +1,19 @@
+services:
+  database:
+    container_name: micro_db
+    image: "postgres:alpine"
+    ports:
+      - "5432:5432"
+    volumes:
+      - "postgresql_data:/var/lib/postgresql"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=docker
+    networks:
+      - app-net
+
+volumes:
+  postgresql_data:
+
+networks:
+  app-net:
