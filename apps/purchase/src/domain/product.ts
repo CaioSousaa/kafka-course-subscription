@@ -1,9 +1,5 @@
+import { Categories } from "@prisma/client";
 import crypto from "node:crypto";
-
-enum Categories {
-  BackEnd,
-  FrontEnd,
-}
 
 interface IProductProps {
   title: string;
