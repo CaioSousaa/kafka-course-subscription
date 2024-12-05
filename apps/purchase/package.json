@@ -4,6 +4,7 @@
   },
   "dependencies": {
     "express": "^4.21.1",
+    "kafkajs": "^2.2.4",
     "typescript": "^5.7.2"
   },
   "devDependencies": {
