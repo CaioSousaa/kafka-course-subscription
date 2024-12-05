@@ -6,7 +6,7 @@ interface IPurchaseProps {
   created_at: Date;
 }
 
-export class PurchaseProps {
+export class Purchase {
   private _id: string;
   private props: IPurchaseProps;
 
