@@ -36,7 +36,7 @@ export class PurchaseProduct {
 
     const purchase = new Purchase({
       id_customer: customer.id,
-      id_product: product_id,
+      id_product: product.id,
       created_at: new Date(),
     });
 

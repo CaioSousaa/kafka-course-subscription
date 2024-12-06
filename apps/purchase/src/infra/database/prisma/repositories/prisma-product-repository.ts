@@ -4,8 +4,8 @@ import prisma from "../prisma";
 
 export class PrismaProductRepository implements ProductRepository {
   async findById(id: string): Promise<Product | null> {
-    const product = await prisma.product.findUnique({
-      where: { id: id },
+    const product = await prisma.product.findFirst({
+      where: { id },
     });
 
     if (!product) {
