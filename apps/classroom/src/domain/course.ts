@@ -6,7 +6,7 @@ interface CourseProps {
   purchaseProductId: Maybe<string>;
 }
 
-export class Coure {
+export class Course {
   private _id: string;
   private props: CourseProps;
 
