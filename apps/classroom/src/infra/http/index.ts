@@ -25,7 +25,7 @@ async function main() {
   });
 
   await consumer.connect();
-  await consumer.subscribe({ topic: "purchase.new-purchase" });
+  await consumer.subscribe({ topic: "purchases.new-purchase" });
 
   await consumer.run({
     eachMessage: async ({ message }) => {
